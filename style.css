@@ -22,12 +22,12 @@ body,  #wrapper, .content{
 
 .wrapper .content {
     margin: 30px;
-    text-align: center;
 }
 
 .content p, .content button, .content span {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .content span {
@@ -36,13 +36,19 @@ body,  #wrapper, .content{
 }
 
 .content button {
+    margin-top: 30px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    margin-top: 30px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.11);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .content p, .content span {
+        font-size: 30px;
+    }
 }
